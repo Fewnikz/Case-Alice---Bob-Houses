@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "adresse": "Skovbrynet 12, 4690 Haslev",
+    "pris": 2495000,
+    "kvm": 142,
+    "beskrivelse": "Flot og velholdt villa med stor have, lyst køkken-alrum og gode opholdsrum. Boligen ligger i et roligt område tæt på grønne områder og indkøb.",
+    "latitude": 55.3271,
+    "longitude": 11.9638
+  },
+  {
+    "id": 2,
+    "adresse": "Søndergade 27, 4700 Næstved",
+    "pris": 1895000,
+    "kvm": 118,
+    "beskrivelse": "Hyggeligt byhus med moderne køkken, tre værelser og en mindre gårdhave. Ejendommen ligger centralt med kort afstand til butikker og offentlig transport.",
+    "latitude": 55.2299,
+    "longitude": 11.7609
+  },
+  {
+    "id": 3,
+    "adresse": "Solvænget 8, 4600 Køge",
+    "pris": 3295000,
+    "kvm": 156,
+    "beskrivelse": "Rummelig familiebolig med fire værelser, stort køkken-alrum og sydvendt terrasse. Huset har en stor have og gode parkeringsmuligheder.",
+    "latitude": 55.4580,
+    "longitude": 12.1821
+  },
+  {
+    "id": 4,
+    "adresse": "Birkevej 31, 4100 Ringsted",
+    "pris": 2295000,
+    "kvm": 134,
+    "beskrivelse": "Indflytningsklar villa med tre værelser, moderne badeværelse og åben stue. Fra boligen er der nem adgang til både skole, indkøb og natur.",
+    "latitude": 55.4426,
+    "longitude": 11.7902
+  },
+  {
+    "id": 5,
+    "adresse": "Engparken 19, 4760 Vordingborg",
+    "pris": 1795000,
+    "kvm": 128,
+    "beskrivelse": "Charmerende villa med en god planløsning og hyggelig have. Boligen indeholder blandt andet stort køkken, stue, tre værelser og bryggers.",
+    "latitude": 55.0061,
+    "longitude": 11.9106
+  },
+  {
+    "id": 6,
+    "adresse": "Møllevej 44, 4681 Herfølge",
+    "pris": 3095000,
+    "kvm": 165,
+    "beskrivelse": "Stor og moderne villa med fem værelser, rummeligt køkken-alrum og stor terrasse. Perfekt til familien, der ønsker god plads både inde og ude.",
+    "latitude": 55.4024,
+    "longitude": 12.1482
+  },
+  {
+    "id": 7,
+    "adresse": "Strandvejen 16, 4600 Køge",
+    "pris": 2895000,
+    "kvm": 109,
+    "beskrivelse": "Hyggeligt hus med kort afstand til vandet. Boligen byder på en lys stue, moderne køkken, to værelser og en dejlig terrasse.",
+    "latitude": 55.4627,
+    "longitude": 12.1905
+  },
+  {
+    "id": 8,
+    "adresse": "Bøgeallé 7, 4700 Næstved",
+    "pris": 2650000,
+    "kvm": 148,
+    "beskrivelse": "Velindrettet familiehus med fire værelser og stor opholdsstue. Ejendommen har en lukket have med plads til både leg og afslapning.",
+    "latitude": 55.2365,
+    "longitude": 11.7457
+  },
+  {
+    "id": 9,
+    "adresse": "Havrevænget 23, 4690 Haslev",
+    "pris": 2145000,
+    "kvm": 121,
+    "beskrivelse": "Pæn og velholdt bolig med tre værelser, lyst køkken og stor stue. Haven er nem at holde og indeholder en overdækket terrasse.",
+    "latitude": 55.3334,
+    "longitude": 11.9702
+  },
+  {
+    "id": 10,
+    "adresse": "Parkvej 5, 4100 Ringsted",
+    "pris": 2795000,
+    "kvm": 151,
+    "beskrivelse": "Flot villa med moderne indretning, fire værelser og stort køkken-alrum. Huset ligger i et attraktivt kvarter tæt på grønne områder.",
+    "latitude": 55.4478,
+    "longitude": 11.7786
+  },
+  {
+    "id": 11,
+    "adresse": "Egevej 18, 4600 Køge",
+    "pris": 2395000,
+    "kvm": 126,
+    "beskrivelse": "Hyggelig villa med god planløsning og stor have. Boligen har tre værelser, køkken, badeværelse og en rummelig stue med adgang til terrassen.",
+    "latitude": 55.4517,
+    "longitude": 12.1754
+  },
+  {
+    "id": 12,
+    "adresse": "Lærkevej 9, 4760 Vordingborg",
+    "pris": 1995000,
+    "kvm": 137,
+    "beskrivelse": "Lys og indbydende villa med fire værelser og et stort køkken-alrum. Fra boligen er der gode forbindelser til centrum og lokale faciliteter.",
+    "latitude": 55.0128,
+    "longitude": 11.9031
+  },
+  {
+    "id": 13,
+    "adresse": "Fasanvej 36, 4690 Haslev",
+    "pris": 3195000,
+    "kvm": 174,
+    "beskrivelse": "Stor familievenlig villa med fem værelser, to badeværelser og et stort køkken-alrum. Ejendommen har en stor have og dobbelt carport.",
+    "latitude": 55.3208,
+    "longitude": 11.9562
+  },
+  {
+    "id": 14,
+    "adresse": "Ådalsvej 14, 4100 Ringsted",
+    "pris": 2495000,
+    "kvm": 143,
+    "beskrivelse": "Indbydende hus med moderne køkken, fire værelser og en stor sydvendt terrasse. Haven er grøn og privat med god plads til familien.",
+    "latitude": 55.4359,
+    "longitude": 11.8034
+  },
+  {
+    "id": 15,
+    "adresse": "Møllebakken 21, 4700 Næstved",
+    "pris": 2945000,
+    "kvm": 159,
+    "beskrivelse": "Rummelig og moderne bolig med fire værelser, stort køkken-alrum og garage. Huset fremstår lyst og velholdt og har en dejlig privat have.",
+    "latitude": 55.2217,
+    "longitude": 11.7738
+  }
+]

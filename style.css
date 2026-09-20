@@ -1,0 +1,26 @@
+button {
+    background: linear-gradient(#3eec45, rgb(163, 239, 163));
+    height: 15%;
+    border-radius: 10px;
+}
+
+button:hover {
+    background: linear-gradient(#3eec44b7, rgba(163, 239, 163, 0.654));
+}
+
+.grid-container-10-2 {
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2em;
+}
+
+.secondary-bg {
+    background-color: #3eec45;
+}
