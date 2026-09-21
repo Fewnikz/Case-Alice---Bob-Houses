@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Detaljeside for bolig 1: Blomstervej 12, København -->
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blomstervej 12 - Alice & Bob Houses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Alice & Bob Houses</h1>
+    <p>Din lokale ejendomsmægler - vi finder dit drømmehus</p>
+</header>
+
+<nav>
+    <a href="index.html">Forside</a>
+    <a href="index.html#boliger">Vores boliger</a>
+</nav>
+
+<main>
+    <!-- Link tilbage til forsiden, så man nemt kan komme tilbage -->
+    <a href="index.html" class="tilbage-link">&larr; Tilbage til alle boliger</a>
+
+    <!-- Stort billede af boligen -->
+    <img src="https://picsum.photos/id/1040/900/400" alt="Hus på Blomstervej 12" class="detalje-billede">
+
+    <!-- Boks med info om boligen -->
+    <div class="detalje-info">
+        <h2>Blomstervej 12, 2100 København</h2>
+        <p>Størrelse: 85 m²</p>
+        <p class="pris">Pris: 2.495.000 kr.</p>
+
+        <!--
+          Dette er placeholder-tekst, som opgaven siger man må bruge.
+          Alice & Bob Houses skal selv skrive den rigtige tekst senere.
+        -->
+        <p style="margin-top: 15px;">
+            Denne charmerende lejlighed ligger centralt i København med kort
+            afstand til indkøb, skoler og offentlig transport. Boligen
+            fremstår lys og indbydende med god plads til hele familien.
+            Der er nyt køkken, egen altan og adgang til fælles gård.
+            Kontakt os for at høre mere om denne fantastiske bolig.
+        </p>
+    </div>
+
+    <!-- Kort over hvor boligen ligger, lavet med OpenStreetMap
+         Det kræver ikke nogen login eller API-nøgle, derfor er
+         det nemt at bruge for os som stadig lærer -->
+    <div class="kort-boks">
+        <h2 style="margin-bottom: 10px;">Se placering på kort</h2>
+        <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=12.548%2C55.666%2C12.588%2C55.686&layer=mapnik&marker=55.676%2C12.568"
+                title="Kort over Blomstervej 12">
+        </iframe>
+    </div>
+
+    <!--
+      FREMVISNINGSFORMULAR
+      Jeg bruger en "mailto" formular. Det betyder at når man
+      trykker "Send" så åbner det brugerens eget mailprogram
+      (fx Outlook eller Mail) med alle oplysningerne fra
+      formularen skrevet ind automatisk. Man behøver altså ikke
+      JavaScript eller en server for at dette virker.
+    -->
+    <div class="formular-boks">
+        <h2>Book en fremvisning</h2>
+        <p>Udfyld formularen herunder, så åbner dit mailprogram med en besked klar til at sende til os.</p>
+
+        <form action="mailto:kontakt@aliceandbobhouses.dk?subject=Fremvisning af Blomstervej 12" method="post" enctype="text/plain">
+
+            <label for="navn1">Navn:</label>
+            <input type="text" id="navn1" name="Navn" required>
+
+            <label for="email1">Email:</label>
+            <input type="email" id="email1" name="Email" required>
+
+            <label for="telefon1">Telefonnummer:</label>
+            <input type="tel" id="telefon1" name="Telefon" required>
+
+            <label for="tidspunkt1">Ønsket tidspunkt for fremvisning:</label>
+            <input type="datetime-local" id="tidspunkt1" name="Onsket_tidspunkt" required>
+
+            <label for="besked1">Besked (valgfri):</label>
+            <textarea id="besked1" name="Besked" rows="4"></textarea>
+
+            <!-- Når man trykker her, åbner mailprogrammet på computeren -->
+            <button type="submit">Send forespørgsel</button>
+        </form>
+    </div>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Alice & Bob Houses. Alle rettigheder forbeholdes.</p>
+</footer>
+
+</body>
+</html>
