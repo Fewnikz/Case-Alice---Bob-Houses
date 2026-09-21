@@ -82,11 +82,12 @@ button:hover {
 }
 
 .detalje-billede {
-    width: 100%;
-    max-height: 400px;
+    width: 98%;
+    max-height: 50vh;
     object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
 }
 
 .detalje-info {

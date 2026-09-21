@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body>
 
 <header>
     <h1>Alice & Bob Houses</h1>
@@ -21,86 +20,89 @@
     </a>
 </nav>
 
-<main>
+<body>
+        <!-- Stort billede af boligen -->
+        <img id="image" src="https://picsum.photos/id/1040/900/400" alt="Hus på Blomstervej 12" class="detalje-billede">
 
-    <!-- Stort billede af boligen -->
-    <img src="https://picsum.photos/id/1040/900/400" alt="Hus på Blomstervej 12" class="detalje-billede">
+        <!-- Boks med info om boligen -->
+        <div class="detalje-info m-4 p-3">
+            <h2 id="address">Blomstervej 12, 2100 København</h2>
+            <p id="kvm">Størrelse: 85 m²</p>
+            <p class="pris" id="price">Pris: 2.495.000 kr.</p>
 
-    <!-- Boks med info om boligen -->
-    <div class="detalje-info m-4 p-3">
-        <h2>Blomstervej 12, 2100 København</h2>
-        <p>Størrelse: 85 m²</p>
-        <p class="pris">Pris: 2.495.000 kr.</p>
-
-        <p style="margin-top: 15px;">
-            Denne charmerende lejlighed ligger centralt i København med kort
-            afstand til indkøb, skoler og offentlig transport. Boligen
-            fremstår lys og indbydende med god plads til hele familien.
-            Der er nyt køkken, egen altan og adgang til fælles gård.
-            Kontakt os for at høre mere om denne fantastiske bolig.
-        </p>
-    </div>
-
-    <!-- Kort over hvor boligen ligger, lavet med OpenStreetMap
-         Det kræver ikke nogen login eller API-nøgle, derfor er
-         det nemt at bruge for os som stadig lærer -->
-    <div class="kort-boks m-4 p-3">
-        <h2>Se placering på kort</h2>
-        <iframe
-                src="https://www.openstreetmap.org/export/embed.html?bbox=12.548%2C55.666%2C12.588%2C55.686&layer=mapnik&marker=55.676%2C12.568"
-                title="Kort over Blomstervej 12">
-        </iframe>
-    </div>
-
-    <!--
-      FREMVISNINGSFORMULAR
-      Jeg bruger en "mailto" formular. Det betyder at når man
-      trykker "Send" så åbner det brugerens eget mailprogram
-      (fx Outlook eller Mail) med alle oplysningerne fra
-      formularen skrevet ind automatisk. Man behøver altså ikke
-      JavaScript eller en server for at dette virker.
-    -->
-    <div class="m-4 p-3">
-        <h2>Book en fremvisning</h2>
-        <p>Udfyld formularen herunder, så åbner dit mailprogram med en besked klar til at sende til os.</p>
-    </div>
-
-     <form class="m-4 p-3" action="mailto:kontakt@aliceandbobhouses.dk?subject=Fremvisning af Blomstervej 12" method="post" enctype="text/plain">
-        <div class="mb-3">
-        <label for="navn1">Navn:</label>
-        <input class="form-control" type="text" id="navn1" name="Navn" required>
+            <p style="margin-top: 15px;" id="description">
+                Denne charmerende lejlighed ligger centralt i København med kort
+                afstand til indkøb, skoler og offentlig transport. Boligen
+                fremstår lys og indbydende med god plads til hele familien.
+                Der er nyt køkken, egen altan og adgang til fælles gård.
+                Kontakt os for at høre mere om denne fantastiske bolig.
+            </p>
         </div>
 
+        <!-- Kort over hvor boligen ligger, lavet med OpenStreetMap
+             Det kræver ikke nogen login eller API-nøgle, derfor er
+             det nemt at bruge for os som stadig lærer -->
+        <div class="kort-boks m-4 p-3">
+            <h2>Se placering på kort</h2>
+            <iframe
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=12.548%2C55.666%2C12.588%2C55.686&layer=mapnik&marker=55.676%2C12.568"
+                    title="Kort over Blomstervej 12"
+                    id="open-street-map">
+            </iframe>
+        </div>
+
+        <!--
+          FREMVISNINGSFORMULAR
+          Jeg bruger en "mailto" formular. Det betyder at når man
+          trykker "Send" så åbner det brugerens eget mailprogram
+          (fx Outlook eller Mail) med alle oplysningerne fra
+          formularen skrevet ind automatisk. Man behøver altså ikke
+          JavaScript eller en server for at dette virker.
+        -->
+        <div class="m-4 p-3">
+            <h2>Book en fremvisning</h2>
+            <p>Udfyld formularen herunder, så åbner dit mailprogram med en besked klar til at sende til os.</p>
+        </div>
+
+         <form class="m-4 p-3" action="mailto:kontakt@aliceandbobhouses.dk?subject=Fremvisning af Blomstervej 12" method="post" enctype="text/plain">
             <div class="mb-3">
-        <label for="email1">Email:</label>
-        <input class="form-control" type="email" id="email1" name="Email" required>
+            <label for="navn1">Navn:</label>
+            <input class="form-control" type="text" id="navn1" name="Navn" required>
             </div>
 
                 <div class="mb-3">
-        <label for="telefon1">Telefonnummer:</label>
-        <input class="form-control" type="tel" id="telefon1" name="Telefon" required>
+            <label for="email1">Email:</label>
+            <input class="form-control" type="email" id="email1" name="Email" required>
                 </div>
 
                     <div class="mb-3">
-        <label for="tidspunkt1">Ønsket tidspunkt for fremvisning:</label>
-        <input class="form-control" type="datetime-local" id="tidspunkt1" name="Onsket_tidspunkt" required>
+            <label for="telefon1">Telefonnummer:</label>
+            <input class="form-control" type="tel" id="telefon1" name="Telefon" required>
                     </div>
 
-         <div class="form-floating mb-1">
-             <textarea class="form-control" placeholder="Forlad en besked" id="floatingTextarea2" style="height: 100px"></textarea>
-             <label for="floatingTextarea2">Besked</label>
-         </div>
+                        <div class="mb-3">
+            <label for="tidspunkt1">Ønsket tidspunkt for fremvisning:</label>
+            <input class="form-control" type="datetime-local" id="tidspunkt1" name="Onsket_tidspunkt" required>
+                        </div>
 
-         <button class="btn" type="submit">Send forespørgsel</button>
-    </form>
+             <div class="form-floating mb-1">
+                 <textarea class="form-control" placeholder="Forlad en besked" id="floatingTextarea2" style="height: 100px"></textarea>
+                 <label for="floatingTextarea2">Besked</label>
+             </div>
 
-</main>
+             <button class="btn" type="submit">Send forespørgsel</button>
+        </form>
+</body>
 
 <footer>
     <p class="p-3 m-4">&copy; 2026 Alice & Bob Houses. Alle rettigheder forbeholdes.</p>
 </footer>
 
-</body>
 <script src="index.js"></script>
+<script type="text/javascript">
+    window.onload = () => {
+        setContent()
+    }
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </html>
