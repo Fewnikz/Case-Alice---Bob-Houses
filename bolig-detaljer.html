@@ -6,12 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blomstervej 12 - Alice & Bob Houses</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
 
 <header>
     <h1>Alice & Bob Houses</h1>
     <p>Din lokale ejendomsmægler - vi finder dit drømmehus</p>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 </header>
 
 <nav>
@@ -48,8 +85,8 @@
     <!-- Kort over hvor boligen ligger, lavet med OpenStreetMap
          Det kræver ikke nogen login eller API-nøgle, derfor er
          det nemt at bruge for os som stadig lærer -->
-    <div class="kort-boks">
-        <h2 style="margin-bottom: 10px;">Se placering på kort</h2>
+    <div class="kort-boks m-4 p-3">
+        <h2>Se placering på kort</h2>
         <iframe
                 src="https://www.openstreetmap.org/export/embed.html?bbox=12.548%2C55.666%2C12.588%2C55.686&layer=mapnik&marker=55.676%2C12.568"
                 title="Kort over Blomstervej 12">
@@ -64,31 +101,39 @@
       formularen skrevet ind automatisk. Man behøver altså ikke
       JavaScript eller en server for at dette virker.
     -->
-    <div class="formular-boks">
+    <div class="m-4 p-3">
         <h2>Book en fremvisning</h2>
         <p>Udfyld formularen herunder, så åbner dit mailprogram med en besked klar til at sende til os.</p>
-
-        <form action="mailto:kontakt@aliceandbobhouses.dk?subject=Fremvisning af Blomstervej 12" method="post" enctype="text/plain">
-
-            <label for="navn1">Navn:</label>
-            <input type="text" id="navn1" name="Navn" required>
-
-            <label for="email1">Email:</label>
-            <input type="email" id="email1" name="Email" required>
-
-            <label for="telefon1">Telefonnummer:</label>
-            <input type="tel" id="telefon1" name="Telefon" required>
-
-            <label for="tidspunkt1">Ønsket tidspunkt for fremvisning:</label>
-            <input type="datetime-local" id="tidspunkt1" name="Onsket_tidspunkt" required>
-
-            <label for="besked1">Besked (valgfri):</label>
-            <textarea id="besked1" name="Besked" rows="4"></textarea>
-
-            <!-- Når man trykker her, åbner mailprogrammet på computeren -->
-            <button type="submit">Send forespørgsel</button>
-        </form>
     </div>
+
+     <form class="m-4 p-3" action="mailto:kontakt@aliceandbobhouses.dk?subject=Fremvisning af Blomstervej 12" method="post" enctype="text/plain">
+        <div class="mb-3">
+        <label for="navn1">Navn:</label>
+        <input class="form-control" type="text" id="navn1" name="Navn" required>
+        </div>
+
+            <div class="mb-3">
+        <label for="email1">Email:</label>
+        <input class="form-control" type="email" id="email1" name="Email" required>
+            </div>
+
+                <div class="mb-3">
+        <label for="telefon1">Telefonnummer:</label>
+        <input class="form-control" type="tel" id="telefon1" name="Telefon" required>
+                </div>
+
+                    <div class="mb-3">
+        <label for="tidspunkt1">Ønsket tidspunkt for fremvisning:</label>
+        <input class="form-control" type="datetime-local" id="tidspunkt1" name="Onsket_tidspunkt" required>
+                    </div>
+
+         <div class="form-floating mb-1">
+             <textarea class="form-control" placeholder="Forlad en besked" id="floatingTextarea2" style="height: 100px"></textarea>
+             <label for="floatingTextarea2">Besked</label>
+         </div>
+
+         <button class="btn" type="submit">Send forespørgsel</button>
+    </form>
 
 </main>
 
@@ -97,4 +142,6 @@
 </footer>
 
 </body>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </html>
