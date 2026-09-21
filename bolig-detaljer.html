@@ -13,66 +13,25 @@
 <header>
     <h1>Alice & Bob Houses</h1>
     <p>Din lokale ejendomsmægler - vi finder dit drømmehus</p>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
 </header>
 
 <nav>
-    <a href="index.html">Forside</a>
-    <a href="index.html#boliger">Vores boliger</a>
+    <a href="index.html">
+        <button class="btn m-3">Tilbage til forside / boliger</button>
+    </a>
 </nav>
 
 <main>
-    <!-- Link tilbage til forsiden, så man nemt kan komme tilbage -->
-    <a href="index.html" class="tilbage-link">&larr; Tilbage til alle boliger</a>
 
     <!-- Stort billede af boligen -->
     <img src="https://picsum.photos/id/1040/900/400" alt="Hus på Blomstervej 12" class="detalje-billede">
 
     <!-- Boks med info om boligen -->
-    <div class="detalje-info">
+    <div class="detalje-info m-4 p-3">
         <h2>Blomstervej 12, 2100 København</h2>
         <p>Størrelse: 85 m²</p>
         <p class="pris">Pris: 2.495.000 kr.</p>
 
-        <!--
-          Dette er placeholder-tekst, som opgaven siger man må bruge.
-          Alice & Bob Houses skal selv skrive den rigtige tekst senere.
-        -->
         <p style="margin-top: 15px;">
             Denne charmerende lejlighed ligger centralt i København med kort
             afstand til indkøb, skoler og offentlig transport. Boligen
@@ -138,7 +97,7 @@
 </main>
 
 <footer>
-    <p>&copy; 2026 Alice & Bob Houses. Alle rettigheder forbeholdes.</p>
+    <p class="p-3 m-4">&copy; 2026 Alice & Bob Houses. Alle rettigheder forbeholdes.</p>
 </footer>
 
 </body>

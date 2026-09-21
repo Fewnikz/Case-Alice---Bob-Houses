@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "billede": "assets/billede_1.jpg",
     "adresse": "Skovbrynet 12, 4690 Haslev",
     "pris": 2495000,
     "kvm": 142,
@@ -10,6 +11,7 @@
   },
   {
     "id": 2,
+    "billede": "assets/billede_2.jpg",
     "adresse": "Søndergade 27, 4700 Næstved",
     "pris": 1895000,
     "kvm": 118,
@@ -19,6 +21,7 @@
   },
   {
     "id": 3,
+    "billede": "assets/billede_3.jpg",
     "adresse": "Solvænget 8, 4600 Køge",
     "pris": 3295000,
     "kvm": 156,
@@ -28,6 +31,7 @@
   },
   {
     "id": 4,
+    "billede": "assets/billede_4.jpg",
     "adresse": "Birkevej 31, 4100 Ringsted",
     "pris": 2295000,
     "kvm": 134,
@@ -37,6 +41,7 @@
   },
   {
     "id": 5,
+    "billede": "assets/billede_5.jpg",
     "adresse": "Engparken 19, 4760 Vordingborg",
     "pris": 1795000,
     "kvm": 128,
@@ -46,6 +51,7 @@
   },
   {
     "id": 6,
+    "billede": "assets/billede_6.jpg",
     "adresse": "Møllevej 44, 4681 Herfølge",
     "pris": 3095000,
     "kvm": 165,
@@ -55,6 +61,7 @@
   },
   {
     "id": 7,
+    "billede": "assets/billede_7.jpg",
     "adresse": "Strandvejen 16, 4600 Køge",
     "pris": 2895000,
     "kvm": 109,
@@ -64,6 +71,7 @@
   },
   {
     "id": 8,
+    "billede": "assets/billede_8.jpg",
     "adresse": "Bøgeallé 7, 4700 Næstved",
     "pris": 2650000,
     "kvm": 148,
@@ -73,6 +81,7 @@
   },
   {
     "id": 9,
+    "billede": "assets/billede_9.jpg",
     "adresse": "Havrevænget 23, 4690 Haslev",
     "pris": 2145000,
     "kvm": 121,
@@ -82,6 +91,7 @@
   },
   {
     "id": 10,
+    "billede": "assets/billede_10.jpg",
     "adresse": "Parkvej 5, 4100 Ringsted",
     "pris": 2795000,
     "kvm": 151,
@@ -91,6 +101,7 @@
   },
   {
     "id": 11,
+    "billede": "assets/billede_11.jpg",
     "adresse": "Egevej 18, 4600 Køge",
     "pris": 2395000,
     "kvm": 126,
@@ -100,6 +111,7 @@
   },
   {
     "id": 12,
+    "billede": "assets/billede_12.jpg",
     "adresse": "Lærkevej 9, 4760 Vordingborg",
     "pris": 1995000,
     "kvm": 137,
@@ -109,6 +121,7 @@
   },
   {
     "id": 13,
+    "billede": "assets/billede_13.jpg",
     "adresse": "Fasanvej 36, 4690 Haslev",
     "pris": 3195000,
     "kvm": 174,
@@ -118,6 +131,7 @@
   },
   {
     "id": 14,
+    "billede": "assets/billede_14.jpg",
     "adresse": "Ådalsvej 14, 4100 Ringsted",
     "pris": 2495000,
     "kvm": 143,
@@ -127,6 +141,7 @@
   },
   {
     "id": 15,
+    "billede": "assets/billede_15.jpg",
     "adresse": "Møllebakken 21, 4700 Næstved",
     "pris": 2945000,
     "kvm": 159,

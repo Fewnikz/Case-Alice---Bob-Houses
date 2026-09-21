@@ -42,7 +42,7 @@ button:hover {
     border: 1px solid #dddddd;
     border-radius: 8px;
     overflow: hidden; /* så billedet ikke går uden for de runde hjørner */
-    width: 280px;
+    width: 350px;
     text-decoration: none;
     color: #333333;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
