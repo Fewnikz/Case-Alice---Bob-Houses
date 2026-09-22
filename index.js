@@ -102,7 +102,7 @@ async function setContent(){
 
         const distance = 0.005;
 
-        // creates the bbox values
+        // Defines our view on the map
         const bbox = [
             longitude - distance,
             latitude - distance,
